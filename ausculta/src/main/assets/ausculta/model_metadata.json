@@ -1,0 +1,90 @@
+{
+  "model_version": "V143-seed211-fold1-float32-audio-v1",
+  "model_sha256": "8f313d097d116fce6034dc83b753f301f44d317e7500509cc641f189cad7bd07",
+  "experimental": true,
+  "acceptance_passed": false,
+  "clinical_use_validated": false,
+  "confidence_calibrated": false,
+  "class_order": [
+    "Asthma",
+    "Pneumonia",
+    "Healthy",
+    "Bronchitis"
+  ],
+  "input": {
+    "name": "waveforms",
+    "shape": [
+      3,
+      40000
+    ],
+    "dtype": "float32",
+    "sample_rate": 8000,
+    "channels": 1,
+    "amplitude": "normalized PCM [-1,1]",
+    "crops": "first, middle, last 5seconds"
+  },
+  "output": {
+    "shape": [
+      1,
+      4
+    ],
+    "dtype": "float32",
+    "meaning": "Uncalibrated class scores after fixed parent blend and mean of three crops"
+  },
+  "configuration_cross_validation": {
+    "recording_accuracy": 0.6219611401554626,
+    "mean_recording_patient_macro_f1": 0.5620534307622963,
+    "strict_passes": 5,
+    "collapse_folds": 3,
+    "folds": 9,
+    "recalls": {
+      "recording": {
+        "Asthma": 0.4536832733174471,
+        "Pneumonia": 0.6564267358421016,
+        "Healthy": 0.9171984805318139,
+        "Bronchitis": 0.31525448649631654
+      },
+      "patient": {
+        "Asthma": 0.5156695156695157,
+        "Pneumonia": 0.7906259636139377,
+        "Healthy": 0.9343434343434343,
+        "Bronchitis": 0.3333333333333333
+      }
+    }
+  },
+  "artifact_fold_performance": {
+    "recording_accuracy": 0.5977777777777777,
+    "mean_recording_patient_macro_f1": 0.5120873316066005,
+    "strict_passes": 0,
+    "collapse_folds": 0,
+    "folds": 1,
+    "recalls": {
+      "recording": {
+        "Asthma": 0.31343283582089554,
+        "Pneumonia": 0.6308139534883721,
+        "Healthy": 0.9615384615384616,
+        "Bronchitis": 0.46153846153846156
+      },
+      "patient": {
+        "Asthma": 0.15384615384615385,
+        "Pneumonia": 0.7391304347826086,
+        "Healthy": 1.0,
+        "Bronchitis": 0.75
+      }
+    },
+    "gate_failures": [
+      "patient:Asthma:recall_below_0.20",
+      "original_v13_gate_failed"
+    ]
+  },
+  "source_artifact_sha256": "0d52302693c54887b5d1a24b7af96976d5bcbb6283188ed97a34e3f0d680a584",
+  "export_parity": {
+    "recordings": 450,
+    "patients": 75,
+    "max_absolute_score_error": 8.956423002093317e-05,
+    "recording_argmax_changes": 0,
+    "patient_argmax_changes": 0,
+    "tolerance": 0.0001
+  },
+  "runtime": "CPU Interpreter, no XNNPACK/GPU/NNAPI, two threads"
+}

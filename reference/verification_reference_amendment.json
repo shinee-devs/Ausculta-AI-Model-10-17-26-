@@ -1,0 +1,6 @@
+{
+  "initial_verification_complete": false,
+  "observation": "The first export verification reached425recordings without an export error above1e-4, then the original Python single-recording reference differed from archived batch predictions by1.02185369e-7, above the unchanged1e-7original replay tolerance. No full verification was declared.",
+  "correction": "Replay original Python references together in the exact450recording batch used by the archived artifact, and retain the1e-7comparison. Continue to run each exported classifier and audio model per recording, with the originally predeclared1e-5and1e-4export gates and zero recording/patient argmax changes. No model, threshold, export graph or clinical gate changed. Rerun all450recordings.",
+  "new_fits": 0
+}

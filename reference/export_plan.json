@@ -1,0 +1,8 @@
+{
+  "scope": "Export only the fixed selected V143 seed211_fold1 artifact to an isolated Android/TFLite package. No training, new model selection, reserved/development waveform inference or deployed-file replacement.",
+  "input": "Three original five-second 8kHz mono float32 crops, shape[3,40000], normalized PCM in[-1,1]. Android crops first, middle and last windows from a recording of at least5seconds. No new bandpass or loudness normalization.",
+  "graph": "Original mel frontend and572descriptors, each parent's existing StandardScaler, conditional logistic parent, both existing neural diagnosis heads, fixed0.5/0.25/0.25blend and three-window average. Float32, built-in TFLite operators only. No quantization or retraining.",
+  "conversion_parity_gates": "Predeclared export-engineering gates, separate from unchanged disease acceptance: cached-descriptor classifier maxabs score difference<=1e-5; full-waveform maxabs score difference<=1e-4; zero recording and patient argmax changes across all450canonical held-out recordings. Compare original, TensorFlow and TFLite. Export must not claim the original1e-7Python replay tolerance or improved disease validation. Preserve failed export attempts if gates fail.",
+  "publication": "Only portable model, metadata, synthetic golden input/output fixtures, Kotlin integration/module, Android instructions, source exporter and nonidentifying validation reports. No training audio, patient manifests, user/manikin recordings, environment credentials or historical COPD models. Destination supplied by user: shinee-devs/Ausculta-AI-Model-10-17-26-.",
+  "status": "predeclared_before_export"
+}

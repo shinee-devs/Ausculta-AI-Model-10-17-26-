@@ -1,0 +1,19 @@
+{
+  "android_library_release_built": true,
+  "prebuilt_aar": "dist/ausculta-v143-prototype.aar",
+  "prebuilt_aar_sha256": "8051ba848a4a889c4b1dcc38687f987965c9eefca1f85357c6c29711ade71cb0",
+  "aar_model_matches_asset": true,
+  "jvm_tests": 8,
+  "jvm_failures": 0,
+  "android_instrumentation_apk_compiled": true,
+  "android_instrumentation_executed": false,
+  "device_validation": "Run GoldenInferenceTest on the target emulator/device; not executed in this session.",
+  "portable_python_golden_fixture_passed": true,
+  "gradle": "9.2.1",
+  "android_gradle_plugin": "9.0.1",
+  "compile_sdk": 36,
+  "min_sdk": 24,
+  "litert": "1.4.2",
+  "model_experimental": true,
+  "disease_acceptance_passed": false
+}

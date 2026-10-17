@@ -1,0 +1,54 @@
+{
+  "sha256": "8f313d097d116fce6034dc83b753f301f44d317e7500509cc641f189cad7bd07",
+  "bytes": 453544,
+  "inputs": [
+    {
+      "name": "waveforms",
+      "shape": [
+        3,
+        40000
+      ],
+      "dtype": "<class 'numpy.float32'>"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "Identity",
+      "shape": [
+        1,
+        4
+      ],
+      "dtype": "<class 'numpy.float32'>"
+    }
+  ],
+  "operators": [
+    "ABS",
+    "ADD",
+    "ADD_N",
+    "BATCH_MATMUL",
+    "COMPLEX_ABS",
+    "CONCATENATION",
+    "DIV",
+    "FULLY_CONNECTED",
+    "GATHER",
+    "LOG",
+    "LOGISTIC",
+    "MAXIMUM",
+    "MEAN",
+    "MUL",
+    "NEG",
+    "PACK",
+    "REDUCE_MAX",
+    "RESHAPE",
+    "RFFT2D",
+    "RSQRT",
+    "SOFTMAX",
+    "SQRT",
+    "SQUARE",
+    "SQUARED_DIFFERENCE",
+    "STRIDED_SLICE",
+    "SUB",
+    "TOPK_V2",
+    "TRANSPOSE"
+  ]
+}

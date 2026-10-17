@@ -1,0 +1,16 @@
+{
+  "allowed_disease_classes": [
+    "Asthma",
+    "Pneumonia",
+    "Healthy",
+    "Bronchitis"
+  ],
+  "forbidden_disease_classes": [
+    "COPD"
+  ],
+  "source": "User explicitly excludes COPD from all future models and use.",
+  "historical_artifacts": "Preserved for audit; incompatible research inference and training are blocked.",
+  "unverified_control_group_data_allowed": false,
+  "control_group_verification_required_to_continue": false,
+  "healthy_diagnosis_requirement": "Source-confirmed Healthy diagnosis; Normal sound labels and unverified Control Group membership are insufficient."
+}

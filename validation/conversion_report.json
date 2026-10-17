@@ -1,0 +1,178 @@
+{
+  "passed": true,
+  "recordings": 450,
+  "patients": 75,
+  "classifier_max_error": 1.6872117214461468e-07,
+  "waveform_max_error": 8.956423002093317e-05,
+  "tensorflow_waveform_max_error": 8.837213712542535e-05,
+  "recording_argmax_changes": 0,
+  "patient_argmax_changes": 0,
+  "classifier_argmax_changes": 0,
+  "source_sha256": "0d52302693c54887b5d1a24b7af96976d5bcbb6283188ed97a34e3f0d680a584",
+  "tflite_sha256": "8f313d097d116fce6034dc83b753f301f44d317e7500509cc641f189cad7bd07",
+  "builtin_operators_only": true,
+  "float32": true,
+  "new_fits": 0,
+  "original_disease_acceptance_passed": false,
+  "original_fold_metrics": {
+    "recording": {
+      "Asthma": {
+        "precision": 0.3620689655172414,
+        "recall": 0.31343283582089554,
+        "f1-score": 0.336,
+        "support": 67.0
+      },
+      "Pneumonia": {
+        "precision": 0.9194915254237288,
+        "recall": 0.6308139534883721,
+        "f1-score": 0.7482758620689656,
+        "support": 344.0
+      },
+      "Healthy": {
+        "precision": 0.6097560975609756,
+        "recall": 0.9615384615384616,
+        "f1-score": 0.746268656716418,
+        "support": 26.0
+      },
+      "Bronchitis": {
+        "precision": 0.05217391304347826,
+        "recall": 0.46153846153846156,
+        "f1-score": 0.09375,
+        "support": 13.0
+      },
+      "accuracy": 0.5977777777777777,
+      "macro avg": {
+        "precision": 0.48587262538635595,
+        "recall": 0.5918309280965477,
+        "f1-score": 0.48107362969634593,
+        "support": 450.0
+      },
+      "weighted avg": {
+        "precision": 0.7935458329812634,
+        "recall": 0.5977777777777777,
+        "f1-score": 0.6678680702807801,
+        "support": 450.0
+      }
+    },
+    "patient": {
+      "Asthma": {
+        "precision": 0.5,
+        "recall": 0.15384615384615385,
+        "f1-score": 0.23529411764705882,
+        "support": 13.0
+      },
+      "Pneumonia": {
+        "precision": 0.8947368421052632,
+        "recall": 0.7391304347826086,
+        "f1-score": 0.8095238095238095,
+        "support": 46.0
+      },
+      "Healthy": {
+        "precision": 0.7058823529411765,
+        "recall": 1.0,
+        "f1-score": 0.8275862068965517,
+        "support": 12.0
+      },
+      "Bronchitis": {
+        "precision": 0.1875,
+        "recall": 0.75,
+        "f1-score": 0.3,
+        "support": 4.0
+      },
+      "accuracy": 0.68,
+      "macro avg": {
+        "precision": 0.57202979876161,
+        "recall": 0.6607441471571907,
+        "f1-score": 0.543101033516855,
+        "support": 75.0
+      },
+      "weighted avg": {
+        "precision": 0.7583797729618162,
+        "recall": 0.68,
+        "f1-score": 0.6857060433368751,
+        "support": 75.0
+      }
+    }
+  },
+  "tflite_fold_metrics": {
+    "recording": {
+      "Asthma": {
+        "precision": 0.3620689655172414,
+        "recall": 0.31343283582089554,
+        "f1-score": 0.336,
+        "support": 67.0
+      },
+      "Pneumonia": {
+        "precision": 0.9194915254237288,
+        "recall": 0.6308139534883721,
+        "f1-score": 0.7482758620689656,
+        "support": 344.0
+      },
+      "Healthy": {
+        "precision": 0.6097560975609756,
+        "recall": 0.9615384615384616,
+        "f1-score": 0.746268656716418,
+        "support": 26.0
+      },
+      "Bronchitis": {
+        "precision": 0.05217391304347826,
+        "recall": 0.46153846153846156,
+        "f1-score": 0.09375,
+        "support": 13.0
+      },
+      "accuracy": 0.5977777777777777,
+      "macro avg": {
+        "precision": 0.48587262538635595,
+        "recall": 0.5918309280965477,
+        "f1-score": 0.48107362969634593,
+        "support": 450.0
+      },
+      "weighted avg": {
+        "precision": 0.7935458329812634,
+        "recall": 0.5977777777777777,
+        "f1-score": 0.6678680702807801,
+        "support": 450.0
+      }
+    },
+    "patient": {
+      "Asthma": {
+        "precision": 0.5,
+        "recall": 0.15384615384615385,
+        "f1-score": 0.23529411764705882,
+        "support": 13.0
+      },
+      "Pneumonia": {
+        "precision": 0.8947368421052632,
+        "recall": 0.7391304347826086,
+        "f1-score": 0.8095238095238095,
+        "support": 46.0
+      },
+      "Healthy": {
+        "precision": 0.7058823529411765,
+        "recall": 1.0,
+        "f1-score": 0.8275862068965517,
+        "support": 12.0
+      },
+      "Bronchitis": {
+        "precision": 0.1875,
+        "recall": 0.75,
+        "f1-score": 0.3,
+        "support": 4.0
+      },
+      "accuracy": 0.68,
+      "macro avg": {
+        "precision": 0.57202979876161,
+        "recall": 0.6607441471571907,
+        "f1-score": 0.543101033516855,
+        "support": 75.0
+      },
+      "weighted avg": {
+        "precision": 0.7583797729618162,
+        "recall": 0.68,
+        "f1-score": 0.6857060433368751,
+        "support": 75.0
+      }
+    }
+  },
+  "scope": "Canonical original held-out split only. Export engineering parity, not new disease validation. No user/manikin/reserved development data."
+}

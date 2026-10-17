@@ -1,0 +1,4 @@
+# Optional desktop verification only; Android itself needs no Python.
+# Use Python3.11 for this pinned reference environment.
+tensorflow==2.15.0
+numpy==1.26.4

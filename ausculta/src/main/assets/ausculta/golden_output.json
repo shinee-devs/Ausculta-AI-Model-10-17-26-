@@ -1,0 +1,22 @@
+{
+  "synthetic": true,
+  "purpose": "Runtime parity only; not accuracy validation or a clinical example",
+  "input_shape": [
+    3,
+    40000
+  ],
+  "input_dtype": "little-endian float32",
+  "class_order": [
+    "Asthma",
+    "Pneumonia",
+    "Healthy",
+    "Bronchitis"
+  ],
+  "class_scores": [
+    0.5607707500457764,
+    0.36883828043937683,
+    0.01859605498611927,
+    0.051794931292533875
+  ],
+  "maximum_absolute_error": 0.0001
+}
